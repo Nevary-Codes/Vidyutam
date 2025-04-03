@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+        color: #333;
+        position: relative;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .header {
+        height: 80px;
+        background: linear-gradient(90deg, #004085, #007bff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        cursor: grab;
+      }
+      .background-decor {
+        position: absolute;
+        top: 50px;
+        left: -100px;
+        width: 300px;
+        height: 300px;
+        background: rgba(0, 123, 255, 0.15);
+        border-radius: 50%;
+        z-index: -1;
+      }
+      .background-decor2 {
+        position: absolute;
+        bottom: 50px;
+        right: -120px;
+        width: 250px;
+        height: 250px;
+        background: rgba(255, 140, 0, 0.15);
+        border-radius: 50%;
+        z-index: -1;
+      }
+      .date-selection {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 20px 0;
+      }
+      .date-selection input {
+        padding: 12px;
+        border: 2px solid #007bff;
+        border-radius: 8px;
+        font-size: 16px;
+        background: white;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+      }
+      .date-selection input:focus {
+        outline: none;
+        border-color: #0056b3;
+      }
+      .date-selection button {
+        background: #ff8c00;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      }
+      .date-selection button:hover {
+        background: #e07b00;
+      }
+      .dashboard {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+        height: 400px;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="{{ url_for('home') }}"><div class="header">Vidyutam</div></a>
+    <div class="background-decor"></div>
+    <div class="background-decor2"></div>
+
+    <div class="date-selection">
+      <input type="date" id="start-date" />
+      <input type="date" id="end-date" />
+      <button onclick="fetchData()">Fetch</button>
+    </div>
+
+    <div class="dashboard">
+      <div class="card"><canvas id="chart1"></canvas></div>
+      <div class="card"><canvas id="chart2"></canvas></div>
+      <div class="card"><canvas id="chart3"></canvas></div>
+      <div class="card"><canvas id="chart4"></canvas></div>
+    </div>
+
+    <script>
+      function fetchData() {
+        let startDate = document.getElementById("start-date").value;
+        let endDate = document.getElementById("end-date").value;
+        console.log("Fetching data from", startDate, "to", endDate);
+
+        updateCharts();
+      }
+
+      function updateCharts() {
+        let ctx1 = document.getElementById("chart1").getContext("2d");
+        let ctx2 = document.getElementById("chart2").getContext("2d");
+        let ctx3 = document.getElementById("chart3").getContext("2d");
+        let ctx4 = document.getElementById("chart4").getContext("2d");
+
+        new Chart(ctx1, {
+          type: "line",
+          data: {
+            labels: ["Jan", "Feb", "Mar"],
+            datasets: [
+              {
+                label: "Data",
+                data: [10, 20, 30],
+                borderColor: "#007bff",
+                tension: 0.4,
+              },
+            ],
+          },
+        });
+        new Chart(ctx2, {
+          type: "bar",
+          data: {
+            labels: ["Jan", "Feb", "Mar"],
+            datasets: [
+              { label: "Data", data: [15, 25, 35], backgroundColor: "#28a745" },
+            ],
+          },
+        });
+        new Chart(ctx3, {
+          type: "doughnut",
+          data: {
+            labels: ["A", "B", "C"],
+            datasets: [
+              {
+                data: [40, 30, 30],
+                backgroundColor: ["#ff8c00", "#dc3545", "#007bff"],
+              },
+            ],
+          },
+        });
+        new Chart(ctx4, {
+          type: "radar",
+          data: {
+            labels: ["A", "B", "C"],
+            datasets: [
+              { label: "Data", data: [50, 60, 70], borderColor: "#17a2b8" },
+            ],
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
