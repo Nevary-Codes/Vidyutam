@@ -1,0 +1,350 @@
+Date,Day,Holiday,Type
+2025-01-01,Wednesday,New Year's Day,Restricted Holiday
+2025-01-02,Thursday,Last day of Hanukkah,Observance
+2025-01-13,Monday,Lohri,Restricted Holiday
+2025-01-14,Tuesday,Pongal,Restricted Holiday
+2025-01-14,Tuesday,Makar Sankranti,Restricted Holiday
+2025-01-14,Tuesday,Hazarat Ali's Birthday,Restricted Holiday
+2025-01-26,Sunday,Republic Day,Gazetted Holiday
+2025-01-29,Wednesday,Lunar New Year,Observance
+2025-02-02,Sunday,Vasant Panchami,Restricted Holiday
+2025-02-12,Wednesday,Guru Ravidas Jayanti,Restricted Holiday
+2025-02-14,Friday,Valentine's Day,Observance
+2025-02-19,Wednesday,Shivaji Jayanti,Restricted Holiday
+2025-02-23,Sunday,Maharishi Dayanand Saraswati Jayanti,Restricted Holiday
+2025-02-26,Wednesday,Maha Shivaratri/Shivaratri,Gazetted Holiday
+2025-03-02,Sunday,Ramadan Start (Tentative Date),Observance
+2025-03-13,Thursday,Holika Dahana,Restricted Holiday
+2025-03-14,Friday,Holi,Gazetted Holiday
+2025-03-14,Friday,Dolyatra,Restricted Holiday
+2025-03-20,Thursday,March Equinox,Season
+2025-03-30,Sunday,Chaitra Sukhladi,Restricted Holiday
+2025-03-30,Sunday,Ugadi,Restricted Holiday
+2025-03-30,Sunday,Gudi Padwa,Restricted Holiday
+2025-03-31,Monday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Gazetted Holiday
+2025-03-31,Monday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Muslim
+2025-03-31,Monday,Jamat Ul-Vida (Tentative Date),Restricted Holiday
+2025-04-06,Sunday,Rama Navami,Gazetted Holiday
+2025-04-10,Thursday,Mahavir Jayanti,Gazetted Holiday
+2025-04-13,Sunday,First day of Passover,Observance
+2025-04-14,Monday,Vaisakhi,Restricted Holiday
+2025-04-14,Monday,Ambedkar Jayanti,Observance
+2025-04-17,Thursday,Maundy Thursday,Observance
+2025-04-18,Friday,Good Friday,Gazetted Holiday
+2025-04-20,Sunday,Easter Day,Restricted Holiday
+2025-05-01,Thursday,International Worker's Day,Observance
+2025-05-09,Friday,Birthday of Rabindranath,Restricted Holiday
+2025-05-11,Sunday,Mothers' Day,Observance
+2025-05-12,Monday,Buddha Purnima/Vesak,Gazetted Holiday
+2025-06-07,Saturday,Bakrid/Eid ul-Adha (Tentative Date),Gazetted Holiday
+2025-06-15,Sunday,Fathers' Day,Observance
+2025-06-21,Saturday,June Solstice,Season
+2025-06-27,Friday,Rath Yatra,Restricted Holiday
+2025-07-06,Sunday,Muharram/Ashura (Tentative Date),Gazetted Holiday
+2025-07-10,Thursday,Guru Purnima,Observance
+2025-08-03,Sunday,Friendship Day,Observance
+2025-08-09,Saturday,Raksha Bandhan (Rakhi),Restricted Holiday
+2025-08-15,Friday,Independence Day,Gazetted Holiday
+2025-08-15,Friday,Janmashtami (Smarta),Restricted Holiday
+2025-08-15,Friday,Parsi New Year,Restricted Holiday
+2025-08-16,Saturday,Janmashtami,Gazetted Holiday
+2025-08-27,Wednesday,Ganesh Chaturthi/Vinayaka Chaturthi,Restricted Holiday
+2025-09-05,Friday,Milad un-Nabi/Id-e-Milad (Tentative Date),Gazetted Holiday
+2025-09-05,Friday,Onam,Restricted Holiday
+2025-09-22,Monday,First Day of Sharad Navratri,Observance
+2025-09-22,Monday,September Equinox,Season
+2025-09-28,Sunday,First Day of Durga Puja Festivities,Observance
+2025-09-29,Monday,Maha Saptami,Restricted Holiday
+2025-09-30,Tuesday,Maha Ashtami,Restricted Holiday
+2025-10-01,Wednesday,Maha Navami,Restricted Holiday
+2025-10-02,Thursday,Mahatma Gandhi Jayanti,Gazetted Holiday
+2025-10-02,Thursday,Dussehra,Gazetted Holiday
+2025-10-07,Tuesday,Maharishi Valmiki Jayanti,Restricted Holiday
+2025-10-10,Friday,Karaka Chaturthi (Karva Chauth),Restricted Holiday
+2025-10-20,Monday,Naraka Chaturdasi,Restricted Holiday
+2025-10-20,Monday,Diwali/Deepavali,Gazetted Holiday
+2025-10-22,Wednesday,Govardhan Puja,Restricted Holiday
+2025-10-23,Thursday,Bhai Duj,Restricted Holiday
+2025-10-27,Monday,Chhat Puja (Pratihar Sashthi/Surya Sashthi),Restricted Holiday
+2025-10-31,Friday,Halloween,Observance
+2025-11-05,Wednesday,Guru Nanak Jayanti,Gazetted Holiday
+2025-11-24,Monday,Guru Tegh Bahadur's Martyrdom Day,Restricted Holiday
+2025-12-15,Monday,First Day of Hanukkah,Observance
+2025-12-21,Sunday,December Solstice,Season
+2025-12-22,Monday,Last day of Hanukkah,Observance
+2025-12-24,Wednesday,Christmas Eve,Restricted Holiday
+2025-12-25,Thursday,Christmas,Gazetted Holiday
+2025-12-27,Saturday,Guru Govind Singh Jayanti,Restricted Holiday
+2025-12-31,Wednesday,New Year's Eve,Observance
+2026-01-01,Thursday,New Year's Day,Restricted Holiday
+2026-01-03,Saturday,Hazarat Ali's Birthday,Restricted Holiday
+2026-01-14,Wednesday,Pongal,Restricted Holiday
+2026-01-14,Wednesday,Makar Sankranti,Restricted Holiday
+2026-01-23,Friday,Vasant Panchami,Restricted Holiday
+2026-01-26,Monday,Republic Day,Gazetted Holiday
+2026-02-14,Saturday,Valentine's Day,Observance
+2026-02-15,Sunday,Maha Shivaratri/Shivaratri,Gazetted Holiday
+2026-02-17,Tuesday,Lunar New Year,Observance
+2026-02-19,Thursday,Ramadan Start (Tentative Date),Observance
+2026-02-19,Thursday,Shivaji Jayanti,Restricted Holiday
+2026-03-04,Wednesday,Holi,Gazetted Holiday
+2026-03-19,Thursday,Ugadi,Restricted Holiday
+2026-03-19,Thursday,Gudi Padwa,Restricted Holiday
+2026-03-20,Friday,March Equinox,Season
+2026-03-21,Saturday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Gazetted Holiday
+2026-03-21,Saturday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Muslim
+2026-03-26,Thursday,Rama Navami,Gazetted Holiday
+2026-04-02,Thursday,First day of Passover,Observance
+2026-04-02,Thursday,Maundy Thursday,Observance
+2026-04-03,Friday,Good Friday,Gazetted Holiday
+2026-04-05,Sunday,Easter Day,Restricted Holiday
+2026-04-14,Tuesday,Ambedkar Jayanti,Observance
+2026-05-01,Friday,International Worker's Day,Observance
+2026-05-10,Sunday,Mothers' Day,Observance
+2026-05-28,Thursday,Bakrid/Eid ul-Adha (Tentative Date),Gazetted Holiday
+2026-06-21,Sunday,Fathers' Day,Observance
+2026-06-21,Sunday,June Solstice,Season
+2026-06-26,Friday,Muharram/Ashura (Tentative Date),Gazetted Holiday
+2026-07-16,Thursday,Rath Yatra,Restricted Holiday
+2026-08-02,Sunday,Friendship Day,Observance
+2026-08-15,Saturday,Independence Day,Gazetted Holiday
+2026-08-26,Wednesday,Onam,Restricted Holiday
+2026-08-28,Friday,Raksha Bandhan (Rakhi),Restricted Holiday
+2026-09-04,Friday,Janmashtami,Gazetted Holiday
+2026-09-04,Friday,Janmashtami (Smarta),Restricted Holiday
+2026-09-14,Monday,Ganesh Chaturthi/Vinayaka Chaturthi,Restricted Holiday
+2026-09-23,Wednesday,September Equinox,Season
+2026-10-02,Friday,Mahatma Gandhi Jayanti,Gazetted Holiday
+2026-10-11,Sunday,First Day of Sharad Navratri,Observance
+2026-10-17,Saturday,First Day of Durga Puja Festivities,Observance
+2026-10-20,Tuesday,Dussehra,Gazetted Holiday
+2026-10-29,Thursday,Karaka Chaturthi (Karva Chauth),Restricted Holiday
+2026-10-31,Saturday,Halloween,Observance
+2026-11-08,Sunday,Diwali/Deepavali,Gazetted Holiday
+2026-11-11,Wednesday,Bhai Duj,Restricted Holiday
+2026-11-15,Sunday,Chhat Puja (Pratihar Sashthi/Surya Sashthi),Restricted Holiday
+2026-11-24,Tuesday,Guru Tegh Bahadur's Martyrdom Day,Restricted Holiday
+2026-12-05,Saturday,First Day of Hanukkah,Observance
+2026-12-12,Saturday,Last day of Hanukkah,Observance
+2026-12-22,Tuesday,December Solstice,Season
+2026-12-23,Wednesday,Hazarat Ali's Birthday,Restricted Holiday
+2026-12-24,Thursday,Christmas Eve,Restricted Holiday
+2026-12-25,Friday,Christmas,Gazetted Holiday
+2026-12-31,Thursday,New Year's Eve,Observance
+2027-01-01,Friday,New Year's Day,Restricted Holiday
+2027-01-15,Friday,Pongal,Restricted Holiday
+2027-01-15,Friday,Makar Sankranti,Restricted Holiday
+2027-01-26,Tuesday,Republic Day,Gazetted Holiday
+2027-02-06,Saturday,Lunar New Year,Observance
+2027-02-09,Tuesday,Ramadan Start (Tentative Date),Observance
+2027-02-11,Thursday,Vasant Panchami,Restricted Holiday
+2027-02-14,Sunday,Valentine's Day,Observance
+2027-02-19,Friday,Shivaji Jayanti,Restricted Holiday
+2027-03-06,Saturday,Maha Shivaratri/Shivaratri,Gazetted Holiday
+2027-03-10,Wednesday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Gazetted Holiday
+2027-03-10,Wednesday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Muslim
+2027-03-21,Sunday,March Equinox,Season
+2027-03-22,Monday,Holi,Gazetted Holiday
+2027-03-25,Thursday,Maundy Thursday,Observance
+2027-03-26,Friday,Good Friday,Gazetted Holiday
+2027-03-28,Sunday,Easter Day,Restricted Holiday
+2027-04-07,Wednesday,Ugadi,Restricted Holiday
+2027-04-07,Wednesday,Gudi Padwa,Restricted Holiday
+2027-04-14,Wednesday,Ambedkar Jayanti,Observance
+2027-04-15,Thursday,Rama Navami,Gazetted Holiday
+2027-04-22,Thursday,First day of Passover,Observance
+2027-05-01,Saturday,International Worker's Day,Observance
+2027-05-09,Sunday,Mothers' Day,Observance
+2027-05-17,Monday,Bakrid/Eid ul-Adha (Tentative Date),Gazetted Holiday
+2027-06-16,Wednesday,Muharram/Ashura (Tentative Date),Gazetted Holiday
+2027-06-20,Sunday,Fathers' Day,Observance
+2027-06-21,Monday,June Solstice,Season
+2027-07-05,Monday,Rath Yatra,Restricted Holiday
+2027-08-01,Sunday,Friendship Day,Observance
+2027-08-15,Sunday,Independence Day,Gazetted Holiday
+2027-08-17,Tuesday,Raksha Bandhan (Rakhi),Restricted Holiday
+2027-08-25,Wednesday,Janmashtami,Gazetted Holiday
+2027-08-25,Wednesday,Janmashtami (Smarta),Restricted Holiday
+2027-09-04,Saturday,Ganesh Chaturthi/Vinayaka Chaturthi,Restricted Holiday
+2027-09-12,Sunday,Onam,Restricted Holiday
+2027-09-23,Thursday,September Equinox,Season
+2027-09-30,Thursday,First Day of Sharad Navratri,Observance
+2027-10-02,Saturday,Mahatma Gandhi Jayanti,Gazetted Holiday
+2027-10-05,Tuesday,First Day of Durga Puja Festivities,Observance
+2027-10-09,Saturday,Dussehra,Gazetted Holiday
+2027-10-18,Monday,Karaka Chaturthi (Karva Chauth),Restricted Holiday
+2027-10-29,Friday,Diwali/Deepavali,Gazetted Holiday
+2027-10-31,Sunday,Halloween,Observance
+2027-10-31,Sunday,Bhai Duj,Restricted Holiday
+2027-11-04,Thursday,Chhat Puja (Pratihar Sashthi/Surya Sashthi),Restricted Holiday
+2027-11-24,Wednesday,Guru Tegh Bahadur's Martyrdom Day,Restricted Holiday
+2027-12-12,Sunday,Hazarat Ali's Birthday,Restricted Holiday
+2027-12-22,Wednesday,December Solstice,Season
+2027-12-24,Friday,Christmas Eve,Restricted Holiday
+2027-12-25,Saturday,First Day of Hanukkah,Observance
+2027-12-25,Saturday,Christmas,Gazetted Holiday
+2027-12-31,Friday,New Year's Eve,Observance
+2028-01-01,Saturday,Last day of Hanukkah,Observance
+2028-01-01,Saturday,New Year's Day,Restricted Holiday
+2028-01-15,Saturday,Pongal,Restricted Holiday
+2028-01-15,Saturday,Makar Sankranti,Restricted Holiday
+2028-01-26,Wednesday,Republic Day,Gazetted Holiday
+2028-01-26,Wednesday,Lunar New Year,Observance
+2028-01-29,Saturday,Ramadan Start (Tentative Date),Observance
+2028-01-31,Monday,Vasant Panchami,Restricted Holiday
+2028-02-14,Monday,Valentine's Day,Observance
+2028-02-19,Saturday,Shivaji Jayanti,Restricted Holiday
+2028-02-23,Wednesday,Maha Shivaratri/Shivaratri,Gazetted Holiday
+2028-02-27,Sunday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Gazetted Holiday
+2028-02-27,Sunday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Muslim
+2028-03-11,Saturday,Holi,Gazetted Holiday
+2028-03-20,Monday,March Equinox,Season
+2028-03-27,Monday,Ugadi,Restricted Holiday
+2028-03-27,Monday,Gudi Padwa,Restricted Holiday
+2028-04-03,Monday,Rama Navami,Gazetted Holiday
+2028-04-11,Tuesday,First day of Passover,Observance
+2028-04-13,Thursday,Maundy Thursday,Observance
+2028-04-14,Friday,Good Friday,Gazetted Holiday
+2028-04-14,Friday,Ambedkar Jayanti,Observance
+2028-04-16,Sunday,Easter Day,Restricted Holiday
+2028-05-01,Monday,International Worker's Day,Observance
+2028-05-06,Saturday,Bakrid/Eid ul-Adha (Tentative Date),Gazetted Holiday
+2028-05-14,Sunday,Mothers' Day,Observance
+2028-06-04,Sunday,Muharram/Ashura (Tentative Date),Gazetted Holiday
+2028-06-18,Sunday,Fathers' Day,Observance
+2028-06-21,Wednesday,June Solstice,Season
+2028-06-24,Saturday,Rath Yatra,Restricted Holiday
+2028-08-05,Saturday,Raksha Bandhan (Rakhi),Restricted Holiday
+2028-08-06,Sunday,Friendship Day,Observance
+2028-08-13,Sunday,Janmashtami,Gazetted Holiday
+2028-08-13,Sunday,Janmashtami (Smarta),Restricted Holiday
+2028-08-15,Tuesday,Independence Day,Gazetted Holiday
+2028-08-23,Wednesday,Ganesh Chaturthi/Vinayaka Chaturthi,Restricted Holiday
+2028-09-01,Friday,Onam,Restricted Holiday
+2028-09-19,Tuesday,First Day of Sharad Navratri,Observance
+2028-09-22,Friday,September Equinox,Season
+2028-09-24,Sunday,First Day of Durga Puja Festivities,Observance
+2028-09-27,Wednesday,Dussehra,Gazetted Holiday
+2028-10-02,Monday,Mahatma Gandhi Jayanti,Gazetted Holiday
+2028-10-07,Saturday,Karaka Chaturthi (Karva Chauth),Restricted Holiday
+2028-10-17,Tuesday,Diwali/Deepavali,Gazetted Holiday
+2028-10-19,Thursday,Bhai Duj,Restricted Holiday
+2028-10-23,Monday,Chhat Puja (Pratihar Sashthi/Surya Sashthi),Restricted Holiday
+2028-10-31,Tuesday,Halloween,Observance
+2028-11-24,Friday,Guru Tegh Bahadur's Martyrdom Day,Restricted Holiday
+2028-12-01,Friday,Hazarat Ali's Birthday,Restricted Holiday
+2028-12-13,Wednesday,First Day of Hanukkah,Observance
+2028-12-20,Wednesday,Last day of Hanukkah,Observance
+2028-12-21,Thursday,December Solstice,Season
+2028-12-24,Sunday,Christmas Eve,Restricted Holiday
+2028-12-25,Monday,Christmas,Gazetted Holiday
+2028-12-31,Sunday,New Year's Eve,Observance
+2029-01-01,Monday,New Year's Day,Restricted Holiday
+2029-01-14,Sunday,Pongal,Restricted Holiday
+2029-01-14,Sunday,Makar Sankranti,Restricted Holiday
+2029-01-17,Wednesday,Ramadan Start (Tentative Date),Observance
+2029-01-19,Friday,Vasant Panchami,Restricted Holiday
+2029-01-26,Friday,Republic Day,Gazetted Holiday
+2029-02-11,Sunday,Maha Shivaratri/Shivaratri,Gazetted Holiday
+2029-02-13,Tuesday,Lunar New Year,Observance
+2029-02-14,Wednesday,Valentine's Day,Observance
+2029-02-15,Thursday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Gazetted Holiday
+2029-02-15,Thursday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Muslim
+2029-02-19,Monday,Shivaji Jayanti,Restricted Holiday
+2029-03-01,Thursday,Holi,Gazetted Holiday
+2029-03-20,Tuesday,March Equinox,Season
+2029-03-29,Thursday,Maundy Thursday,Observance
+2029-03-30,Friday,Good Friday,Gazetted Holiday
+2029-03-31,Saturday,First day of Passover,Observance
+2029-04-01,Sunday,Easter Day,Restricted Holiday
+2029-04-14,Saturday,Ugadi,Restricted Holiday
+2029-04-14,Saturday,Gudi Padwa,Restricted Holiday
+2029-04-14,Saturday,Ambedkar Jayanti,Observance
+2029-04-22,Sunday,Rama Navami,Gazetted Holiday
+2029-04-25,Wednesday,Bakrid/Eid ul-Adha (Tentative Date),Gazetted Holiday
+2029-05-01,Tuesday,International Worker's Day,Observance
+2029-05-13,Sunday,Mothers' Day,Observance
+2029-05-25,Friday,Muharram/Ashura (Tentative Date),Gazetted Holiday
+2029-06-17,Sunday,Fathers' Day,Observance
+2029-06-21,Thursday,June Solstice,Season
+2029-07-13,Friday,Rath Yatra,Restricted Holiday
+2029-08-05,Sunday,Friendship Day,Observance
+2029-08-15,Wednesday,Independence Day,Gazetted Holiday
+2029-08-22,Wednesday,Onam,Restricted Holiday
+2029-08-23,Thursday,Raksha Bandhan (Rakhi),Restricted Holiday
+2029-09-01,Saturday,Janmashtami,Gazetted Holiday
+2029-09-01,Saturday,Janmashtami (Smarta),Restricted Holiday
+2029-09-11,Tuesday,Ganesh Chaturthi/Vinayaka Chaturthi,Restricted Holiday
+2029-09-22,Saturday,September Equinox,Season
+2029-10-02,Tuesday,Mahatma Gandhi Jayanti,Gazetted Holiday
+2029-10-08,Monday,First Day of Sharad Navratri,Observance
+2029-10-12,Friday,First Day of Durga Puja Festivities,Observance
+2029-10-16,Tuesday,Dussehra,Gazetted Holiday
+2029-10-26,Friday,Karaka Chaturthi (Karva Chauth),Restricted Holiday
+2029-10-31,Wednesday,Halloween,Observance
+2029-11-05,Monday,Diwali/Deepavali,Gazetted Holiday
+2029-11-07,Wednesday,Bhai Duj,Restricted Holiday
+2029-11-11,Sunday,Chhat Puja (Pratihar Sashthi/Surya Sashthi),Restricted Holiday
+2029-11-20,Tuesday,Hazarat Ali's Birthday,Restricted Holiday
+2029-11-24,Saturday,Guru Tegh Bahadur's Martyrdom Day,Restricted Holiday
+2029-12-02,Sunday,First Day of Hanukkah,Observance
+2029-12-09,Sunday,Last day of Hanukkah,Observance
+2029-12-21,Friday,December Solstice,Season
+2029-12-24,Monday,Christmas Eve,Restricted Holiday
+2029-12-25,Tuesday,Christmas,Gazetted Holiday
+2029-12-31,Monday,New Year's Eve,Observance
+2030-01-01,Tuesday,New Year's Day,Restricted Holiday
+2030-01-06,Sunday,Ramadan Start (Tentative Date),Observance
+2030-01-14,Monday,Pongal,Restricted Holiday
+2030-01-14,Monday,Makar Sankranti,Restricted Holiday
+2030-01-26,Saturday,Republic Day,Gazetted Holiday
+2030-02-03,Sunday,Lunar New Year,Observance
+2030-02-05,Tuesday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Gazetted Holiday
+2030-02-05,Tuesday,Ramzan Id/Eid-ul-Fitar (Tentative Date),Muslim
+2030-02-07,Thursday,Vasant Panchami,Restricted Holiday
+2030-02-14,Thursday,Valentine's Day,Observance
+2030-02-19,Tuesday,Shivaji Jayanti,Restricted Holiday
+2030-03-02,Saturday,Maha Shivaratri/Shivaratri,Gazetted Holiday
+2030-03-20,Wednesday,Holi,Gazetted Holiday
+2030-03-20,Wednesday,March Equinox,Season
+2030-04-03,Wednesday,Ugadi,Restricted Holiday
+2030-04-03,Wednesday,Gudi Padwa,Restricted Holiday
+2030-04-12,Friday,Rama Navami,Gazetted Holiday
+2030-04-14,Sunday,Bakrid/Eid ul-Adha (Tentative Date),Gazetted Holiday
+2030-04-14,Sunday,Ambedkar Jayanti,Observance
+2030-04-18,Thursday,First day of Passover,Observance
+2030-04-18,Thursday,Maundy Thursday,Observance
+2030-04-19,Friday,Good Friday,Gazetted Holiday
+2030-04-21,Sunday,Easter Day,Restricted Holiday
+2030-05-01,Wednesday,International Worker's Day,Observance
+2030-05-12,Sunday,Mothers' Day,Observance
+2030-05-14,Tuesday,Muharram/Ashura (Tentative Date),Gazetted Holiday
+2030-06-16,Sunday,Fathers' Day,Observance
+2030-06-21,Friday,June Solstice,Season
+2030-07-02,Tuesday,Rath Yatra,Restricted Holiday
+2030-08-04,Sunday,Friendship Day,Observance
+2030-08-13,Tuesday,Raksha Bandhan (Rakhi),Restricted Holiday
+2030-08-15,Thursday,Independence Day,Gazetted Holiday
+2030-08-21,Wednesday,Janmashtami,Gazetted Holiday
+2030-08-21,Wednesday,Janmashtami (Smarta),Restricted Holiday
+2030-09-01,Sunday,Ganesh Chaturthi/Vinayaka Chaturthi,Restricted Holiday
+2030-09-09,Monday,Onam,Restricted Holiday
+2030-09-23,Monday,September Equinox,Season
+2030-09-28,Saturday,First Day of Sharad Navratri,Observance
+2030-10-02,Wednesday,Mahatma Gandhi Jayanti,Gazetted Holiday
+2030-10-02,Wednesday,First Day of Durga Puja Festivities,Observance
+2030-10-06,Sunday,Dussehra,Gazetted Holiday
+2030-10-15,Tuesday,Karaka Chaturthi (Karva Chauth),Restricted Holiday
+2030-10-26,Saturday,Diwali/Deepavali,Gazetted Holiday
+2030-10-28,Monday,Bhai Duj,Restricted Holiday
+2030-10-31,Thursday,Halloween,Observance
+2030-11-01,Friday,Chhat Puja (Pratihar Sashthi/Surya Sashthi),Restricted Holiday
+2030-11-10,Sunday,Hazarat Ali's Birthday,Restricted Holiday
+2030-11-24,Sunday,Guru Tegh Bahadur's Martyrdom Day,Restricted Holiday
+2030-12-21,Saturday,First Day of Hanukkah,Observance
+2030-12-22,Sunday,December Solstice,Season
+2030-12-24,Tuesday,Christmas Eve,Restricted Holiday
+2030-12-25,Wednesday,Christmas,Gazetted Holiday
+2030-12-26,Thursday,Ramadan Start (Tentative Date),Observance
+2030-12-28,Saturday,Last day of Hanukkah,Observance
+2030-12-31,Tuesday,New Year's Eve,Observance
