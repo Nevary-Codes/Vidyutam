@@ -1,5 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 import pandas as pd
+from ML.call import get_excel
+import requests
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = ""
@@ -34,54 +36,20 @@ def predict():
     
 @app.route('/get-predictions', methods=['GET'])
 def get_predictions():
-    # try:
-    #     # Load Excel file
-    #     df = pd.read_excel("ML/Predictions.xlsx")
-
-    #     # Ensure the Excel file has a "Date" column
-    #     df["Date"] = pd.to_datetime(df["Date"])  
-
-    #     # Get start and end dates from request
-    #     start_date = request.args.get("start_date")
-    #     end_date = request.args.get("end_date")
-
-    #     if not start_date or not end_date:
-    #         return jsonify({"error": "Missing date parameters"})
-
-    #     # Convert string to datetime
-    #     start_date = pd.to_datetime(start_date)
-    #     end_date = pd.to_datetime(end_date)
-
-    #     # Filter data by date range
-    #     df_filtered = df[(df["Date"] >= start_date) & (df["Date"] <= end_date)]
-
-    #     if df_filtered.empty:
-    #         return jsonify({"error": "No data available for selected range"})
-
-    #     # Convert dataframe to JSON
-    #     data = {
-    #         "labels": df_filtered["Date"].dt.strftime("%Y-%m-%d").tolist(),  # Labels (dates)
-    #         "values": df_filtered["Electricity Required"].tolist(),  # Single data column for all charts
-    #     }
-
-    #     return jsonify(data)
-    # except Exception as e:
-    #     return jsonify({"error": str(e)})
     try:
-        # Load Excel file
-        df = pd.read_excel("ML/Predictions.xlsx")
-
-        # Ensure the Excel file has a "Date" column
-        df["Date"] = pd.to_datetime(df["Date"])  
-
-        # Get start and end dates from request
         start_date = request.args.get("start_date")
         end_date = request.args.get("end_date")
+
+        get_excel(start_date, end_date)
+
+        df = pd.read_excel("Predictions.xlsx")
+
+        df["Date"] = pd.to_datetime(df["Date"])  
+
 
         if not start_date or not end_date:
             return jsonify({"error": "Missing date parameters"})
 
-        # Convert string to datetime
         start_date = pd.to_datetime(start_date)
         end_date = pd.to_datetime(end_date)
 

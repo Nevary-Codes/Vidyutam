@@ -48,8 +48,8 @@ def change_data(data, holidays):
 
 
 def process(date1, date2):
-    api = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Delhi%2CINDIA/{date1}/{date2}?unitGroup=metric&contentType=csv&include=days&include=hours&key={API_KEY}"
-    holidays = pd.read_csv("Data/Public Holidays/2025.csv")
+    api = f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Delhi%2CINDIA/{date1}/{date2}?unitGroup=metric&contentType=csv&include=days&include=hours&key={API_KEY2}"
+    holidays = pd.read_csv("ML/Data/Public Holidays/2025.csv")
     holidays = holidays[~holidays['Type'].isin(['observance', 'Restricted', 'Restricted Holiday'])]
 
 
@@ -83,7 +83,7 @@ def process(date1, date2):
 
 def get_excel(date1, date2):
     dat = process(date1, date2)
-    loaded_model = load_model("best-model-xgbr-1.pkl")
+    loaded_model = load_model("ML/best-model-xgbr-1.pkl")
     y_preds = loaded_model.predict(dat)
 
     predictions = pd.DataFrame(columns=["Date", "Electricity Required"])

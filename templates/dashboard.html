@@ -266,7 +266,11 @@
         if (chart3) chart3.destroy();
         if (chart4) chart4.destroy();
 
-        chart1 = new Chart(ctx1, {
+        let gradient = ctx1.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, "rgba(0,123,255,0.4)");
+        gradient.addColorStop(1, "rgba(0,123,255,0)");
+
+        new Chart(ctx1, {
           type: "line",
           data: {
             labels: labels,
@@ -275,57 +279,98 @@
                 label: "Line Data",
                 data: values,
                 borderColor: "#007bff",
-                tension: 0.4,
+                backgroundColor: gradient, // Adds a gradient fill
+                borderWidth: 3,
+                pointRadius: 5,
+                pointBackgroundColor: "#007bff",
+                tension: 0.3, // Smoother curve
               },
             ],
           },
+          options: {
+            plugins: {
+              legend: { labels: { font: { size: 16 } } },
+            },
+            elements: { point: { radius: 5, hoverRadius: 8 } },
+          },
         });
 
-        chart2 = new Chart(ctx2, {
+        new Chart(ctx2, {
           type: "bar",
           data: {
             labels: labels,
             datasets: [
-              { label: "Bar Data", data: values, backgroundColor: "#28a745" },
+              {
+                label: "Bar Data",
+                data: values,
+                backgroundColor: "#28a745",
+                borderRadius: 8, // Rounded edges
+              },
             ],
+          },
+          options: {
+            animation: {
+              duration: 1500,
+              easing: "easeOutBounce", // Smooth animation
+            },
           },
         });
 
-        const monthColors = [
-          "#FF5733", // January - Reddish Orange
-          "#33FF57", // February - Green
-          "#5733FF", // March - Purple
-          "#FF33A1", // April - Pink
-          "#33A1FF", // May - Light Blue
-          "#A1FF33", // June - Yellow-Green
-          "#FF8C00", // July - Dark Orange
-          "#DC3545", // August - Red
-          "#007bff", // September - Blue
-          "#28a745", // October - Green
-          "#6f42c1", // November - Dark Purple
-          "#ffcc00", // December - Gold
-        ];
-
-        chart3 = new Chart(ctx3, {
+        new Chart(ctx3, {
           type: "doughnut",
           data: {
             labels: labels,
             datasets: [
               {
                 data: values,
-                backgroundColor: monthColors.slice(0, labels.length),
+                backgroundColor: [
+                  "#FF5733",
+                  "#33FF57",
+                  "#5733FF",
+                  "#FF33A1",
+                  "#33A1FF",
+                  "#A1FF33",
+                  "#FF8C00",
+                  "#DC3545",
+                  "#007bff",
+                  "#28a745",
+                  "#6f42c1",
+                  "#ffcc00",
+                ],
+                hoverOffset: 10, // Enlarges segment on hover
               },
             ],
           },
+          options: {
+            plugins: {
+              legend: { labels: { font: { size: 16 }, color: "#444" } },
+            },
+            animation: { animateScale: true, animateRotate: true },
+          },
         });
 
-        chart4 = new Chart(ctx4, {
+        new Chart(ctx4, {
           type: "radar",
           data: {
             labels: labels,
             datasets: [
-              { label: "Radar Data", data: values, borderColor: "#17a2b8" },
+              {
+                label: "Radar Data",
+                data: values,
+                borderColor: "rgba(23,162,184,1)",
+                backgroundColor: "rgba(23,162,184,0.3)",
+                borderWidth: 2,
+                pointBackgroundColor: "#17a2b8",
+              },
             ],
+          },
+          options: {
+            scales: {
+              r: {
+                grid: { color: "rgba(200,200,200,0.3)" }, // Lighter grid
+                angleLines: { color: "rgba(0,0,0,0.2)" },
+              },
+            },
           },
         });
       }
