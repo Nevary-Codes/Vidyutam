@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,164 +15,22 @@
       }
       a {
         text-decoration: none;
+        color: inherit;
       }
+
+      .logout {
+        height: 40px;
+        width: 100px;
+        border-radius: 2px;
+        border-color: transparent;
+      }
+
       .header {
         height: 80px;
         background: linear-gradient(90deg, #004085, #007bff);
         display: flex;
         align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 26px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-      }
-      .date-selection {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin: 20px 0;
-      }
-      .date-selection input {
-        padding: 12px;
-        border: 2px solid #007bff;
-        border-radius: 8px;
-        font-size: 16px;
-        background: white;
-      }
-      .date-selection button {
-        background: #ff8c00;
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        border-radius: 8px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      .dashboard {
-        width: 90%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-      .card {
-        background: white;
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-        height: 400px;
-      }
-    </style>
-  </head>
-  <body>
-    <a href="{{ url_for('home') }}"><div class="header">Vidyutam</div></a>
-
-    <div class="date-selection">
-      <input type="date" id="start-date" required />
-      <input type="date" id="end-date" required />
-      <button onclick="fetchData()">Fetch</button>
-    </div>
-
-    <div class="dashboard">
-      <div class="card"><canvas id="chart1"></canvas></div>
-      <div class="card"><canvas id="chart2"></canvas></div>
-      <div class="card"><canvas id="chart3"></canvas></div>
-      <div class="card"><canvas id="chart4"></canvas></div>
-    </div>
-
-    <script>
-      let chart1, chart2, chart3, chart4;
-
-      async function fetchData() {
-        let startDate = document.getElementById("start-date").value;
-        let endDate = document.getElementById("end-date").value;
-
-        if (!startDate || !endDate) {
-          alert("Please select a date range.");
-          return;
-        }
-
-        let response = await fetch(`/get-predictions?start_date=${startDate}&end_date=${endDate}`);
-        let data = await response.json();
-
-        if (data.error) {
-          console.error("Error fetching data:", data.error);
-          return;
-        }
-
-        updateCharts(data);
-      }
-
-      function updateCharts(data) {
-        let ctx1 = document.getElementById("chart1").getContext("2d");
-        let ctx2 = document.getElementById("chart2").getContext("2d");
-        let ctx3 = document.getElementById("chart3").getContext("2d");
-        let ctx4 = document.getElementById("chart4").getContext("2d");
-
-        if (chart1) chart1.destroy();
-        if (chart2) chart2.destroy();
-        if (chart3) chart3.destroy();
-        if (chart4) chart4.destroy();
-
-        chart1 = new Chart(ctx1, {
-          type: "line",
-          data: {
-            labels: data.labels,
-            datasets: [{ label: "Line Data", data: data.line, borderColor: "#007bff", tension: 0.4 }],
-          },
-        });
-
-        chart2 = new Chart(ctx2, {
-          type: "bar",
-          data: {
-            labels: data.labels,
-            datasets: [{ label: "Bar Data", data: data.bar, backgroundColor: "#28a745" }],
-          },
-        });
-
-        chart3 = new Chart(ctx3, {
-          type: "doughnut",
-          data: {
-            labels: data.labels,
-            datasets: [{ data: data.doughnut, backgroundColor: ["#ff8c00", "#dc3545", "#007bff"] }],
-          },
-        });
-
-        chart4 = new Chart(ctx4, {
-          type: "radar",
-          data: {
-            labels: ["A", "B", "C"],
-            datasets: [{ label: "Radar Data", data: data.radar, borderColor: "#17a2b8" }],
-          },
-        });
-      }
-    </script>
-  </body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Energy Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
-        color: #333;
-        position: relative;
-      }
-      .header {
-        height: 80px;
-        background: linear-gradient(90deg, #004085, #007bff);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         color: white;
         font-size: 26px;
       }
@@ -215,7 +73,13 @@
     </style>
   </head>
   <body>
-    <div class="header">Vidyutam</div>
+    <div class="header">
+      <a href="{{ url_for('home') }}"> <div class>Vidyutam</div></a>
+      <div>Hi {{ user }}</div>
+      <div>
+        <button class="logout" onclick="window.location.href='/logout'">Logout</button>
+      </div>
+    </div>
 
     <div class="date-selection">
       <input type="date" id="start-date" required />

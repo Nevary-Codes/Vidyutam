@@ -1,94 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="static/css/vars.css">
-  <link rel="stylesheet" href="static/css/style-login.css">
-  
-  
-  <style>
-   a,
-   button,
-   input,
-   select,
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       border: none;
-       text-decoration: none;
-       background: none;
-   
-       -webkit-font-smoothing: antialiased;
-   }
-   
-   menu, ol, ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
-   }
-   </style>
-  <title>Document</title>
-</head>
-<body>
-  <div class="glass-effect-login-page-blue">
-    <img class="group" src="static/images/group0.svg" />
-    <img class="group2" src="static/images/group1.svg" />
-    <img class="group3" src="static/images/group2.svg" />
-    <img class="group4" src="static/images/group3.svg" />
-    <div class="frame-2257">
-      <div class="your-logo">Your logo</div>
-      <div class="frame-2256">
-        <div class="login">Login</div>
-        <div class="group-2250">
-          <div class="frame-4">
-            <div class="email">Email</div>
-            <div class="frame-1">
-              <div class="username-gmail-com">username@gmail.com</div>
-            </div>
-          </div>
-          <div class="forgot-password">Forgot Password?</div>
-          <div class="frame-3">
-            <div class="password">Password</div>
-            <div class="frame-2">
-              <div class="password2">Password</div>
-              <img
-                class="clarity-eye-hide-line"
-                src="static/images/clarity-eye-hide-line0.svg"
-              />
-            </div>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="static/css/style-register.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Gilroy", sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: radial-gradient(circle, #0085ff, #003465);
+      }
+
+      input {
+        border-radius: 5px;
+        border: none;
+        border-color: transparent;
+        padding: 2px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+
+      button {
+        label{
+          color: black;
+        }
+        background-color: white;
+        border-color: transparent;
+        border-radius: 5px;
+        width: 223.5px;
+        margin-top: 5px;
+      }
+
+      label {
+        color: white;
+      }
+
+      .glass-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        text-align: center;
+      }
+
+      h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+
+      .input-group label {
+        color: white;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      .input-group input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 14px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: #003465;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: #0055a4;
+      }
+
+      .register-link {
+        margin-top: 15px;
+        color: white;
+        font-size: 14px;
+      }
+
+      .register-link a {
+        color: #00bfff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glass-container">
+      <h2>Login</h2>
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+          {{ form.username.label }}<br />
+          {{ form.username(size=32, placeholder="Username") }}
         </div>
-        
-      </div>
-      <div class="frame-5">
-        <div class="sign-in">Sign in</div>
-      </div>
-      <div class="don-t-have-an-account-yet-register-for-free">
-        <span>
-          <span class="don-t-have-an-account-yet-register-for-free-span">
-            Don’t have an account yet?
-          </span>
-          <span class="don-t-have-an-account-yet-register-for-free-span2">
-            Register for free
-          </span>
-        </span>
-      </div>
+        <div>
+          {{ form.password.label }}<br />
+          {{ form.password(size=32, placeholder="Password") }}
+        </div>
+        {% for error in form.username.errors %}
+        <p class="error">{{ error }}</p>
+        {% endfor %} {% for error in form.password.errors %}
+        <p class="error">{{ error }}</p>
+        {% endfor %}
+        <button type="submit">{{ form.submit.label }}</button>
+      </form>
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+      <p class="{{ category }}">{{ message }}</p>
+      {% endfor %} {% endif %} {% endwith %}
+
+      <p class="register-link">
+        Don't Have an Account? <a href="{{ url_for('register') }}">Register</a>
+      </p>
     </div>
-    <img class="group7" src="static/images/group6.svg" />
-    <img class="group8" src="static/images/group7.svg" />
-    <img class="group9" src="static/images/group8.svg" />
-    <img class="group10" src="static/images/group9.svg" />
-    <img class="group11" src="static/images/group10.svg" />
-    <img class="group12" src="static/images/group11.svg" />
-  </div>
-  
-</body>
+  </body>
 </html>

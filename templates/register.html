@@ -1,117 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
-  <link rel="stylesheet" href="static/css/style-register.css">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Gilroy", sans-serif;
-    }
-    
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: radial-gradient(circle, #0085ff, #003465);
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="static/css/style-register.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Gilroy", sans-serif;
+      }
 
-    .glass-container {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 40px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      width: 350px;
-      text-align: center;
-    }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: radial-gradient(circle, #0085ff, #003465);
+      }
 
-    h2 {
-      color: white;
-      margin-bottom: 20px;
-    }
+      input {
+        border-radius: 5px;
+        border: none;
+        border-color: transparent;
+        padding: 2px;
+      }
 
-    .input-group {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      margin-bottom: 15px;
-    }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
 
-    .input-group label {
-      color: white;
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
+      button {
+        label {
+          color: black;
+        }
+        background-color: white;
+        border-color: transparent;
+        border-radius: 5px;
+        width: 223.5px;
+        margin-top: 5px;
+      }
 
-    .input-group input {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      outline: none;
-      font-size: 14px;
-    }
+      label {
+        color: white;
+      }
 
-    .btn {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      background: #003465;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-    }
+      .glass-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        text-align: center;
+      }
 
-    .btn:hover {
-      background: #0055a4;
-    }
+      h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
 
-    .register-link {
-      margin-top: 15px;
-      color: white;
-      font-size: 14px;
-    }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 15px;
+      }
 
-    .register-link a {
-      color: #00bfff;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="glass-container">
-    <h2>Register</h2>
-    <form>
-      <div class="input-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-      </div>
+      .input-group label {
+        color: white;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
 
-      <div class="input-group">
-        <label for="username">Username</label>
-        <input type="username" id="username" placeholder="Enter your username" required>
-      </div>
+      .input-group input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 14px;
+      }
 
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password" required>
-      </div>
+      .btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: #003465;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
 
-      <div class="input-group">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" id="confirm-password" placeholder="Confirm password" required>
-      </div>
+      .btn:hover {
+        background: #0055a4;
+      }
 
-      <button type="submit" class="btn">Sign Up</button>
-    </form>
+      .register-link {
+        margin-top: 15px;
+        color: white;
+        font-size: 14px;
+      }
 
-    <p class="register-link">Already have an account? <a href="login.html">Login</a></p>
-  </div>
-</body>
+      .register-link a {
+        color: #00bfff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="glass-container">
+      <h2>Register</h2>
+      <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+          {{ form.username.label }}<br />
+          {{ form.username(size=32, placeholder="Username") }}
+        </div>
+        <div>
+          {{ form.email.label }}<br />
+          {{ form.email(size=32, placeholder="Email") }}
+        </div>
+        <div>
+          {{ form.password.label }}<br />
+          {{ form.password(size=32, placeholder="Password") }}
+        </div>
+        <div>
+          {{ form.confirm.label }}<br />
+          {{ form.confirm(size=32, placeholder="Confirm Password") }}
+        </div>
+        {% for field in form.errors %} {% for error in form.errors[field] %}
+        <p class="error">{{ error }}</p>
+        {% endfor %} {% endfor %}
+        <button type="submit">{{ form.submit.label }}</button>
+      </form>
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+      <p class="{{ category }}">{{ message }}</p>
+      {% endfor %} {% endif %} {% endwith %}
+
+      <p class="register-link">
+        Already have an account? <a href="{{ url_for('login') }}">Login</a>
+      </p>
+    </div>
+  </body>
 </html>

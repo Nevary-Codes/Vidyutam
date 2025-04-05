@@ -118,9 +118,8 @@ def get_graphs():
     ax.set_xlabel("Date")
     ax.set_ylabel("Energy")
     fig.savefig("/Users/aryanmanchanda/Desktop/Vidyutam/Web/static/images/line_chart.jpg")
-    plt.close(fig)  # Close the figure to free memory
+    plt.close(fig)
 
-    # Pie chart
     fig, ax = plt.subplots()
     ax.pie(monthly_data["Electricity Required"], autopct='%1.1f%%')
     ax.legend(monthly_data["Date"], loc="center left", bbox_to_anchor=(1, 0.5))
@@ -130,7 +129,6 @@ def get_graphs():
 
     total_sum = data["Electricity Required"].sum() / 1000
 
-    # Bar chart
     fig, ax = plt.subplots(figsize=(8, 2)) 
     ax.barh(y=[0], width=[total_sum], color='skyblue')
     ax.set_xlim(0, total_sum * 2)
@@ -144,7 +142,6 @@ def get_graphs():
     plt.savefig("/Users/aryanmanchanda/Desktop/Vidyutam/Web/static/images/total.jpg")
     plt.close(fig)
 
-    # Monthly line chart
     fig, ax = plt.subplots(figsize=(12,5))
     ax.plot(monthly_data["Date"], monthly_data["Electricity Required"])
     ax.set_xlabel("Months")
